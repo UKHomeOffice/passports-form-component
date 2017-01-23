@@ -1,0 +1,27 @@
+{
+  "name": "hmpo-form-component",
+  "version": "1.0.0",
+  "description": "Base component for the passports-form-controller",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/passports-form-component.git"
+  },
+  "author": "HMPO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UKHomeOffice/passports-form-component/issues"
+  },
+  "homepage": "https://github.com/UKHomeOffice/passports-form-component#readme",
+  "dependencies": {
+    "debug": "^2.1.1",
+    "underscore": "^1.7.0",
+    "hmpo-form-wizard": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1"
+  }
+}
