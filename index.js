@@ -10,6 +10,9 @@ class Component {
     field(settings, defaults) {
         let config = defaults || this.defaults();
 
+        // todo: attach any mixins
+        // config.mixins = this.mixins();
+
         // extend component defaults with provided settings
         _.each(settings, (setting, name) => {
             // allow overriding (rather than extending) of default values
@@ -46,6 +49,21 @@ class Component {
     // implement to provide default field settings
     defaults() {
         return {};
+    }
+
+    // array of custom mixins
+    mixins() {
+        return;
+        /*
+        return {
+            'mixinName': {
+                '/path/to/template',
+                renderWith,
+                options;
+            },
+            ...
+        }
+        */
     }
 
 }

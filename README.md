@@ -1,11 +1,13 @@
 # passports-form-components
 Base component for use with passports forms.
 
-This is the base component class that can be used to create custom components.
+## Intro
 
-See example components for usage - https://github.com/UKHomeOffice/passports-example-components.
+This is the base component class that can be used to create custom components. 'Components' are reusable form elements, such as fields or form controllers.
 
-Components should extend from the base and implement at least one of two methods:
+## How to use
+
+Components that inherit from the base should implement at least one of two methods:
 
 - 'controller': provide a form controller for use at step level.
 - 'defaults': provide default field settings (if providing more than one field you can instead call the fields method directly from custom methods, for example see https://github.com/UKHomeOffice/passports-example-components/blob/master/components/dates/index.js)
@@ -13,7 +15,6 @@ Components should extend from the base and implement at least one of two methods
 Example usage:
 ```
 // index.js
-
 const Component = require('hmpo-form-component');
 const fields = require('./fields');
 const fieldController = require('./controller');
@@ -32,7 +33,6 @@ class Field extends Component {
 }
 
 // controller.js
-
 module.exports = function (settings) {
 
     // field keys can be passed in through settings.fields
@@ -85,3 +85,5 @@ const fields = {
     'my-field': component.field(), // use field defaults
 };
 ```
+
+For more examples see - https://github.com/UKHomeOffice/passports-example-components.
